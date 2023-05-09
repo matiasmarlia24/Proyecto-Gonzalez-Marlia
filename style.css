@@ -1,0 +1,288 @@
+h1{
+    color:#96b91b ;
+}
+p{
+    color: black;
+}
+header{
+    background-color: #96b91b;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    list-style: none;
+    display: none;
+}
+header nav ul li{
+    display: inline;
+    padding: 15px;
+}
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Raleway"
+}
+header nav ul li a:hover{
+    color: blue;
+}
+
+
+.divoverflow{
+    width: 350px;
+    height: 200px;
+    background-color:#96b91b ;
+    padding: 10px;
+    border: solid 5px; color: black;
+    margin: 10px;
+}
+.divoverflow img{
+width: 50px;
+padding: 5px 10 px;
+margin: 5px;
+}
+article{
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+}
+article div img{
+    width: 500px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+article h2{
+    font-size: 20px;
+   margin-bottom: 20px;
+}
+article p{
+    margin-bottom: 40px;
+}
+article a{
+text-decoration: none;
+background-color:#96b91b ;
+width: 100px;
+padding: 15px 10px;
+text-align: center;
+border-radius: 10px;
+color: black;
+display: inline-block
+}
+article div{
+    position: relative;
+}
+article div small{
+    position: absolute;
+background-color:#96b91b ;
+border-radius: 10px 10px 10px 10px;
+text-transform: uppercase;
+padding: 8px;
+}
+.fondo-platform{
+    height: 400px;
+    background-image: url(./assets/images/madrid.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondo-registrarse{
+    height: 400px;
+    background-image: url(./assets/images/medicos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fondo-contact{
+    height: 400px;
+    background-image: url(./assets/images/cx.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+.imagen-contact{
+    width: 75px;
+}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+header{
+    background-color: #96b91b;
+    padding: 30px 20px;
+}
+.header-container{
+   
+max-width: 1200px;
+margin:0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.header-container-navbar{
+display: none;
+}
+.header-container-navbar li{
+    margin: 15px;
+}
+.header-container-navbar li a{
+    color: aliceblue;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Raleway";
+    src: url(./assets/fonts/Raleway-Regular.ttf);
+    font-style: normal;
+}
+@font-face {
+    font-family:"Raleway" ;
+    src: url(./assets/fonts/Raleway-Bold.ttf);
+    font-weight: bold;
+}
+body{
+    font-family: "Raleway";
+}
+
+.container {
+   text-align: center;
+   justify-content: space-between;
+}
+.title-index{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+
+
+/*hero*/
+
+.hero{
+
+padding: 60px 20px;
+
+}
+.hero-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:(1fr);
+    
+    gap: 50px;
+}
+
+
+.hero-container-info{
+    margin-top: 150px;
+}
+.hero-container-info h1{
+    font-size: 50px;
+    margin-bottom: 20px
+}
+.hero-container-info p {
+    font-size: 20px;
+   margin-bottom: 40px;
+   line-height: 1.5;
+   justify-content: space-between;
+   gap: 50px;
+}
+.hero-container-info a{
+    color: aliceblue;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 30px;
+}
+
+
+/*tarjetas*/
+.courses{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.courses-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+.card{
+background-color: aliceblue;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 25px 50px 12px; color: black;
+
+
+}
+.card-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.card-link{
+    background-color: #96b91b;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.card-description{
+background-color: #96b91b;
+color: aliceblue;
+font-weight: bold;
+padding: 15px 0;
+border-radius: 10px;
+width: 100%;
+display: block;
+margin-bottom: 40px;
+}
+
+.card-header{
+    padding: 10px;
+    grid-template-columns:repeat(3, 3fr);
+}
+
+/*media queries*/
+@media(min-width:768px){
+    .header-container-navbar{
+        display: flex;
+    }
+    .header-container-navbar-mobile{
+        display: none;
+    }
+   
+    .courses-cards{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .hero-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    }
+    @media(min-width:992px){
+        .hero-container{
+            grid-template-columns: repeat(2,1fr);
+            align-items: center;
+        }
+        .courses-cards{
+            grid-template-columns:repeat(3, 1fr);
+        }
+        }
+/*breakpoint*/
+@media(min-width:320px) {
+    h1{
+        color: black;
+    }
+    header nav ul{
+        display: block;
+    }
+ 
+       
+
+    }
+
+    
