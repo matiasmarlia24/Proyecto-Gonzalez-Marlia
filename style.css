@@ -156,7 +156,12 @@ body{
     font-weight: bold;
 }
 
-
+.header-container a:hover{
+content: "inicio";
+font-size: 14px;
+margin-left: 5px;
+color: aliceblue;
+}
 
 /*hero*/
 
@@ -197,7 +202,9 @@ padding: 60px 20px;
     font-weight: bold;
     padding: 15px 30px;
 }
-
+.hero-container-info a:hover{
+    color: #96b91b;
+}
 
 /*tarjetas*/
 .courses{
