@@ -1,0 +1,14 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "este es un proyecto de practica de html y css del curso de **desarrollo web**\r pronto veremos nuevas tecnologias como SASS",
+  "main": "index.js",
+  "scripts": {
+   "build-sass":"sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "Matias Gonzalez Marlia",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}

@@ -1,0 +1,54 @@
+.footer{
+    background-color:#96b91b;
+    color: $bgDark;
+    padding: 60px 20px;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.h4{
+    color: black;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer-container-list{
+   li{
+    margin: 10px 0;
+    a{
+        color:$fontLight ;
+        &:hover{
+            color: blue;
+        }
+    }
+   }
+}
+.footer-copy{
+ margin-top: 40px;
+ text-align: center;
+ color: grey;   
+}
+
+@media(min-width:$bpMedium){
+    .footer-container{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+.footer-container-rrss{
+    //mapa(llave: valor)
+    $socialIcons:(
+        whatsapp: #1bb93d,
+        instagram: #b91b82,
+        youtube: #fdfefd,
+        facebook: #1b3db9
+    );
+    padding: 30px 20px;
+    font-size: 50px;
+    
+}
+//bucle
