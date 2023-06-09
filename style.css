@@ -210,19 +210,24 @@ padding: 60px 20px;
 .courses{
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 .courses-cards{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 10px;
 }
 .card{
 background-color: aliceblue;
 border-radius: 10px;
-padding: 20px;
+padding: 10px;
 box-shadow: 0 25px 50px 12px; color: black;
 
-
+}
+.card-body{
+    border-radius: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr;
 }
 .card-title{
     margin-bottom: 20px;
@@ -293,3 +298,121 @@ margin-bottom: 40px;
     }
 
     
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      @font-face {
+        font-family: "Raleway";
+        src: url("./assets/fonts/Raleway-Regular.ttf");
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Raleway";
+        src: url("./assets/fonts/Raleway-Regular.ttf");
+        font-weight: bold;
+      }
+      body {
+        font-family: "Raleway";
+      }
+      
+      .a {
+        text-decoration: none;
+      }
+      
+      .ul {
+        list-style-type: none;
+      }
+      
+      .p {
+        line-height: 1.5;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      
+      .footer {
+        background-color: #96b91b;
+        color: black;
+        padding: 60px 20px;
+      }
+      
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+      
+      .h4 {
+        color: black;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      
+      .footer-container-list li {
+        margin: 10px 0;
+      }
+      .footer-container-list li a {
+        color: white;
+      }
+      .footer-container-list li a:hover {
+        color: blue;
+      }
+      
+      .footer-copy {
+        margin-top: 40px;
+        text-align: center;
+        color: grey;
+      }
+      
+      @media (min-width: 768px) {
+        .footer-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .footer-container-rrss {
+        padding: 30px 20px;
+        font-size: 50px;
+      }
+      
+      .statistics {
+        margin-top: 80px;
+        padding: 120px 20 px;
+        background-image: url("../assets/images/barcelona-scaled.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      .statistics-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+      }
+      .statistics-container-item {
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        margin: 30px 0;
+      }
+      .statistics-container-item span {
+        font-size: 20px;
+        margin-top: 5px;
+        display: block;
+      }
+      
+      @media (min-width: 576px) {
+        .statistics-container {
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+      
